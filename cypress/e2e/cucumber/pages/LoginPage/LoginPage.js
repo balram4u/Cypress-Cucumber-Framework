@@ -4,7 +4,7 @@ const PASSWORD_FIELD = "//input[@id='password']";
 const LOGIN_BUTTON = "//span[contains(text(),'Login')]";
 const NEXT_BUTTON = "//span[contains(text(),'Next')]";
 class login {
-    static login(username, password) {
+    static loginWithUserPassword(username, password) {
       cy.xpath(USER_ID_FIELD).type(username);
       cy.xpath(NEXT_BUTTON).click();
       cy.xpath(PASSWORD_FIELD).type(password);

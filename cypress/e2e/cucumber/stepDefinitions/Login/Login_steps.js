@@ -1,5 +1,5 @@
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
-import login from '../../pages/LoginPage';
+import login from '../../pages/LoginPage/LoginPage';
 Given("I navigate to the login page", function () {
   cy.visit("10.91.8.146");
 });
@@ -26,4 +26,9 @@ Then(
       message
     );
   }
-);
+)
+
+When("Login to the portal using UserName {string} and Password {int}",(userId,password)=>{
+login.loginWithUserPassword(userId,password);
+  
+});
