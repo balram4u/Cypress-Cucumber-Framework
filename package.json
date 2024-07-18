@@ -27,5 +27,8 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     }
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.13.0"
   }
 }

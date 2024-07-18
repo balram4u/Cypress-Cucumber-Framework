@@ -39,12 +39,8 @@ class GroupHomePage {
     cy.wait(200);
   }
   static verifyGroupTitle(title) {
-  
       cy.log('Verifying Group homepage title');
-      cy.url().should('include', 'groups')
-
-
-    
+      cy.url().should('include',title)
   }
   static clickOnGroupUsingUrl() {
     cy.log('visit create group home page for first time');

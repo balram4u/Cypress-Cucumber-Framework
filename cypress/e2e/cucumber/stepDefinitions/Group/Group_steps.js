@@ -1,7 +1,7 @@
-import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps'
+import { Given, When, Then, And } from 'cypress-cucumber-preprocessor/steps'
 import GroupHomePage from '../../pages/GroupPage/GroupHomePage'
 
-When("Navigate to Group main menu",()=>{
+And("Navigate to Group main menu",()=>{
     cy.log("Click on Group main menu")
     GroupHomePage.clickOnGroupMainMenu();
     GroupHomePage.clickOnGroupsSubMenu();
